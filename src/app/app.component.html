@@ -1,0 +1,74 @@
+<router-outlet></router-outlet>
+<div class="card card-body ">
+  <div class="row page_background">
+    <div class="col-12 col-lg-12 col-sm-12 col-md-12">
+      <h2><strong>Executive Dashboard</strong></h2>
+    </div>
+
+    <div class="flex-container">
+      <strong for="">From Date</strong>
+      <div class="item"><input type="date" class="form-control card" placeholder="Form Date"> </div>&nbsp;&nbsp;
+      <strong for="">To Date</strong>
+      <div class="item"><input type="date" class="form-control card" placeholder="To Date"></div>
+    </div>
+
+    <div class="row mt-3 ">
+
+      <div class="col-lg-3 col-sm-12 col-md-6 my-2">
+        <div class="card card-body cardHeight">
+          <strong >New Wins</strong>
+          <div class="text-center">
+            <h2 class="mt-4"><strong>230</strong></h2>
+            <span class="text-success"><i class="bi bi-arrow-up"></i>25%</span><br>
+            <span>Vs previous 30 Days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-md-6 my-2">
+        <div class="card card-body cardHeight">
+          <strong>Trial:Win Rate</strong>
+          <div class="text-center">
+            <h2 class="mt-4"><strong>9.86</strong></h2>
+            <span class="text-success"><i class="bi bi-arrow-up"></i>25%</span><br>
+            <span>Vs previous 30 Days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-md-6 my-2">
+        <div class="card card-body cardHeight">
+          <strong>New MMR</strong>
+          <div class="text-center">
+           <h2 class="mt-4"><strong>25,009</strong></h2>
+            <span class="text-success"><i class="bi bi-arrow-up"></i>25%</span><br>
+            <span>Vs previous 30 Days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-md-6 my-2">
+        <div class="card card-body cardHeight">
+          <strong >Page View</strong>
+          <app-doughnut-chart></app-doughnut-chart>
+         </div>
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-6 col-sm-12 col-md-12">
+        <div class="card card-body">
+          <app-bubble-chart></app-bubble-chart>
+          </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 col-md-12" style="height: 50em;">
+        <div class="card card-body" >
+          <app-column-chart [columnChart_data]="columnChart_data"  [columnLabel]="columnLabel"></app-column-chart>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

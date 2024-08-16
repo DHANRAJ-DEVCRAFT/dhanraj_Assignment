@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.page_background{ //page background color
+  background-color: #f0f0f0;
+}
+
+
+/* Flex container */
+.flex-container {
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: row; /* Aligns items in a row (this is default) */
+  gap: 10px; /* Adds space between items */
+  justify-content:left; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+}
+
+
